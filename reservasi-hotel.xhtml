@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Reservation Hotel Room</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reservation Hotel Room</h1>
+    
+    <div class="container">
+        <h2>Personal Date</h2>
+        <div class="form-group">
+            <strong>1. Name</strong><br />
+            <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-group">
+            <strong>2. Gender</strong><br />
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="male" name="gender" value="Male" />
+                    <span class="radio-custom"></span>
+                    <label for="male">Male</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="female" name="gender" value="Female" />
+                    <span class="radio-custom"></span>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <strong>3. Email Address</strong><br />
+            <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+            <strong>4. Telp Number</strong><br />
+            <input type="tel" name="telp" id="telp" />
+        </div>
+    </div>
+
+    <div class="reservation-room">
+        <h2>Reservation Room form</h2>
+        <div class="form-group">
+            <strong>1. Reservation Name</strong><br />
+            <input type="text" name="reservation_name" id="reservation_name" />
+        </div>
+        <div class="form-group">
+            <strong>2. Booking Date</strong><br />
+            <input type="date" name="booking_date" id="booking_date" />
+        </div>
+        <div class="form-group">
+            <strong>3. Room Type</strong><br />
+            <select name="room_type" id="room_type">
+                <option value="Deluxe">Deluxe</option>
+                <option value="Standard">Standard</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <strong>4. Bed Type</strong><br />
+            <select name="bed_type" id="bed_type">
+                <option value="Single bed">Single bed</option>
+                <option value="Double bed">Double bed</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <strong>5. Breakfast</strong><br />
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="with_breakfast" name="breakfast" value="With Breakfast" />
+                    <span class="radio-custom"></span>
+                    <label for="with_breakfast"><strong>With Breakfast</strong></label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="without_breakfast" name="breakfast" value="Without Breakfast" />
+                    <span class="radio-custom"></span>
+                    <label for="without_breakfast"><strong>Without Breakfast</strong></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Payment</h2>
+        <div class="form-group">
+            <strong>1. Chek in date</strong><br />
+            <input type="date" name="check_in" id="check_in" />
+        </div>
+        <div class="form-group">
+            <strong>2. Chek out date</strong><br />
+            <input type="date" name="check_out" id="check_out" />
+        </div>
+        <div class="form-group">
+            <strong>3. Payment Method</strong><br />
+            <select name="payment_method" id="payment_method">
+                <option value="cash">cash</option>
+                <option value="credit_card">Credit Card</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="form-group" style="text-align: center;">
+        <input type="Submit" value="Submit" class="Submit-btn" />
+    </div>
+</body>
+</html>
